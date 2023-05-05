@@ -9,6 +9,7 @@ for i in range(len(nums)):
     if suml<0:
         suml = 0
 
+#Total TC: O(n)
 print(max_sum)
 
     
