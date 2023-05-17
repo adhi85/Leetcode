@@ -29,5 +29,6 @@ class Solution:
             
         return dummy.next
 
-        
+# TC: O(max(n,m))
+# SC: O(N)
             
