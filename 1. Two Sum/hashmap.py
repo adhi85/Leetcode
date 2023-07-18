@@ -12,3 +12,6 @@ for i in range(len(nums)):
         print([i,ad[k]])
     else:
         ad[nums[i]] = i
+
+# TC: O(N)
+# SC: O(N)
