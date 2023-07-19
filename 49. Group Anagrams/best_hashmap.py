@@ -14,3 +14,6 @@ class Solution:
             dic[tuple(count)].append(i)
             
         return dic.values()
+    
+# TC: O(m * n * 26) ==> O(m*n)
+# SC: O(m)
