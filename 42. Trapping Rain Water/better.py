@@ -43,3 +43,29 @@ print(trap(height))
 # TC: O(N) == O(N) =>Creating array + O(N) => traversing
 # SC: O(2N) prefix and suffix array 
     
+
+
+        # prefix = []
+        # postfix = [0 for i in range(len(height))]
+        # trapped = 0
+        # x = 0
+        
+        # for i in range(len(height)):
+        #     x = max(x,height[i])
+        #     prefix.append(x)
+        
+        # x = 0
+        # for i in range(len(height)-1, -1, -1):
+        #     x = max(x,height[i])
+        #     postfix[i] = x
+        
+        # for i in range(len(height)):
+        #     l = prefix[i]
+        #     r = postfix[i]
+            
+        #     x = min(l,r)
+        #     trap = x - height[i]
+            
+        #     trapped += trap
+            
+        # return trapped
