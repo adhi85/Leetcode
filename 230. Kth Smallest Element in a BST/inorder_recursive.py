@@ -14,12 +14,13 @@ class Solution:
         self.ans = 0
         # Calling inorder function and it will update the ans
         self.inorder(root)
-        
+
         return self.ans
 
     def inorder(self, root):
 
-        if not root:
+        # self.ans because if we get the ans exit as soon as we get kth element
+        if not root or self.ans:
             return
 
         # Since find min go to  last of left node
