@@ -1,0 +1,16 @@
+class Solution:
+    def largestNumber(self, nums):
+        
+        
+        for i, n in enumerate(nums):
+            nums[i] = str(n)
+            
+        
+        for i in range(len(nums)-1):
+            for j in range(i+1,len(nums)):
+                
+                if nums[i] + nums[j] < nums[j] + nums[i]:
+                    nums[i],nums[j] = nums[j],nums[i]
+                    
+        
+        return str(int("".join(nums)))
