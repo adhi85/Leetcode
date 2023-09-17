@@ -1,3 +1,6 @@
+import time
+
+
 class Solution:
     def rob(self, nums):
 
@@ -14,3 +17,15 @@ class Solution:
 
         money(0, 0)
         return ans[0]
+
+
+start = time.time()
+
+nums = [1, 2, 3, 1]
+
+T = Solution()
+
+print(T.rob(nums))
+
+end = time.time()
+print(f"Time: {start -end}")
